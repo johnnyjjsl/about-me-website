@@ -1,0 +1,51 @@
+/* Your Styles Here */
+body{
+
+    font-family: monospace;
+    
+    background-color: #BCCEF8;
+
+    #sections {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #johnny {
+        max-width: 35%;
+        max-height: 35%;
+        float: left;
+        border: 5px solid #FAF7F0;
+        border-radius: 50%;
+    }
+
+
+    #info {
+        padding-left: 10%;
+        float: left;
+    }
+
+    #name {
+        color: #CDFCF6;
+        padding-left: 5%;
+    }
+
+    #about {
+        background-color: #98A8F8;
+        border: 5px solid #FAF7F0;
+        max-width: 350px;
+        padding: 10px;
+    }
+
+    #toggle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #toggleid {
+        background-color: #FAF7F0;
+        font-family: monospace;
+    }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>About Me</title>
+  </head>
+  <script>
+    function changeText() {
+      var textInfo = document.getElementById("aboutText");
+      var button = document.getElementById("toggleid");
+      var intro =
+        "Hello! My name is Johnny Sanchez-Lopez. I am a fourth-year student majoring in Computer Science. My threads are in People and Info. I am from Ellijay, Georgia.";
+      var socialGood =
+        "I am passionate about helping empower local communities in any given area. Growing up in a small rural town, I learned the importance of community and what we can achieve if we are a united force. The idea of contributing to initiatives that strengthen and uplift local communities resonates with me, and I am eager to explore opportunities to get involved and make a positive impact through this organization.";
+      if (textInfo.innerText == intro) {
+        textInfo.innerText = socialGood;
+        button.innerText = "About Me";
+      } else {
+        textInfo.innerText = intro;
+        button.innerText = "More Info";
+      }
+    }
+  </script>
+  <!-- Your HTML Here -->
+  <div id="sections">
+    <div id="pfp">
+      <img id="johnny" src="johnny.jpg" alt="Picture of Johnny" />
+    </div>
+    <div id="info">
+      <h1 id="name">Johnny Sanchez-Lopez</h1>
+      <div id="about">
+        <p id="aboutText">
+          Hello! My name is Johnny Sanchez-Lopez. I am a fourth-year student
+          majoring in Computer Science. My threads are in People and Info. I am
+          from Ellijay, Georgia.
+        </p>
+        <div id="toggle">
+          <button id="toggleid" onclick="changeText()">More Info</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</html>
